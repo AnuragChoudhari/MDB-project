@@ -55,7 +55,7 @@
         *{
             margin: 0;
             padding: 0;
-            
+            font-size: 20px;
         }
         .form-label{
             font-size: 20px;
@@ -64,31 +64,15 @@
         form{
             padding: 50px;
         }
+
+        input{
+            width: 100%;
+        }
+     
     </style>
 </head>
 <body>
-<!-- 
-    <form name="contact" netlify method="POST" data-netlify="true">
-        <p>
-          <label>Your Name: <input type="text" name="name" /></label>
-        </p>
-        <p>
-          <label>Your Email: <input type="email" name="email" /></label>
-        </p>
-        <p>
-          <label>Your Role: <select name="role[]" multiple>
-            <option value="leader">Leader</option>
-            <option value="follower">Follower</option>
-          </select></label>
-        </p>
-        <p>
-          <label>Message: <textarea name="message"></textarea></label>
-        </p>
-        <p>
-          <button type="submit">Send</button>
-        </p>
-      </form>
-     -->
+
 
      <div class="p-5 text-center bg-light">
         <h1 class="mb-3">Book an Appointment</h1>
@@ -98,30 +82,28 @@
         <h3>Fill the below form</h3>
       </div>
 
-     <form name="appointment" netlify method="POST" data-netlify="true"> 
 
-        <div class="form-outline">
-            <input type="text" id="form12" class="form-control" style="padding-top: 50px; padding-bottom: 50px; font-size: 20px"/>
-            <label class="form-label" for="form12">First Name</label>
-          </div>
-
-          <div class="form-outline">
-            <input type="text" id="form12" class="form-control" style="padding-top: 50px; padding-bottom: 50px; font-size: 20px"/>
-            <label class="form-label" for="form12">Last Name</label>
-          </div>
-
-          <div class="form-outline">
-            <input type="text" id="form12" class="form-control" style="padding-top: 50px; padding-bottom: 50px; font-size: 20px"/>
-            <label class="form-label" for="form12">Address</label>
-          </div>
-
-
-
-  
       
-        <!-- Submit button -->
-        <button type="submit" class="btn btn-primary btn-block mb-4" style="font-size: 20px;">Submit</button>
+    <form name="contact" netlify method="POST" data-netlify="true">
+        <p>
+          <label>Your Name: <input type="text" name="name" /></label>
+        </p>
+        <p>
+          <label>Your Email: <input type="email" name="email" /></label>
+        </p>
+        <p>
+            <label>Your Contact No: <input type="email" name="email" /></label>
+          </p>
+        
+        <p>
+          <label>Message: <textarea name="message" ></textarea></label>
+        </p>
+        <p>
+          <button type="submit">Send</button>
+        </p>
       </form>
+    
+ 
 
 </body>
 </html>
