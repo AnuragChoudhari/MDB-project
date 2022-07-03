@@ -1,0 +1,192 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Inter;
+}
+
+nav{
+    width: 100%;
+    position: fixed;
+    backdrop-filter: blur(10px) brightness(0.5);
+    box-shadow: 0px 0px 20px 0px black;
+    z-index: 10;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    margin-bottom: 0;
+}
+
+nav ul li{
+    display: inline-flex;
+}
+
+nav ul li a{
+    font-size: 20px;
+    text-decoration: none;
+    color: white;
+    padding: 20px;
+    font-weight: 200;
+}
+
+#home{
+    height: 120vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    background: url('http://localhost/MDB/img/Desk2.png') no-repeat center center/cover;
+    color: white;
+}
+
+.hero_container img{
+    
+    height: auto;
+    width: 70%;
+    position: relative;
+    bottom: 50px;
+}
+
+.hero_container{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.hero_container h1{
+        padding-bottom: 20px;
+        font-weight: 500;
+        font-size: 40px;
+        text-align: center;
+}
+
+.hero_container h3{
+    font-weight: 200;
+    text-align: center;
+    position: relative;
+    font-size: 20px;
+    top: -10px;
+}
+
+.hero_container_foot{
+    position: relative;
+    top: 5px; 
+    font-size: 16px;
+    text-align: center;
+    width: 50%;
+}
+
+.hero_container_foot p{
+    font-weight: 200;
+    position: relative;
+    top: 5px;
+    font-size: 15px;
+}
+ /* About section */
+
+#about{
+    height: 200vh;  
+
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.abt_container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.abt_container h1{
+        text-align: center;
+        position: relative;
+        padding: 20px;
+        font-size: 40px;
+        top: 40px;
+        bottom: 40px;
+        color: #DAAC7E;
+}
+
+.abt_container p{
+    text-align: left;
+    padding: 20px;
+    margin: 20px;
+    font-size: 18px;
+    font-weight: 300;
+}
+
+.abt_content{
+    position: relative;
+    top: 50px;
+    height: auto;
+    width: 80%;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+.abt_content h2{
+    font-size: 40px;
+    color: #DAAC7E;
+    position: relative;
+    left: 40px;
+    top: 20px;
+}
+
+#active_sites{
+    height: 100vh;
+    text-align: center;
+}
+
+#contact{
+    height: auto;
+    color: white;
+    background: black;
+}
+
+#contact h1{
+    font-size: 40px;
+    font-weight: 200;
+    text-align: center;
+}
+
+.contact_form_container{
+    padding: 50px;
+  
+}
+
+.contact_form_container form{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contact_form_container label {
+    padding: 20px;
+}
+
+#submit{
+    padding: 10px;   
+}
+
+form textarea{
+    padding: 10px;
+    outline: none;
+}
+
+form input{
+    font-size: 20px;
+    outline: none;
+    padding: 10px;
+}

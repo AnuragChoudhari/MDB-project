@@ -1,0 +1,278 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Inter;
+}
+
+html{
+    scroll-snap-align: smooth;
+}
+
+nav{
+    width: 100%;
+    position: fixed;
+    background: rgb(0, 0, 0);
+    box-shadow: 0px 0px 20px 0px black;
+    z-index: 20;
+    text-align: center;
+    padding-left: 20px;
+}
+
+nav ul {
+    list-style-type: none;
+    margin-bottom: 0;
+}
+
+nav ul li{
+    display: inline-flex;
+}
+
+nav ul li a{
+    font-size: 20px;
+    text-decoration: none;
+   color: grey;
+    padding: 20px;
+    font-weight: 300;
+    font-size: 18px;
+    transition: .6s ease-in-out;
+}
+
+nav ul li a:hover{  
+        text-decoration: none;
+        color: white;
+}
+
+#home{
+    height: 120vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    background: url('http://localhost/MDB/img/Desk2.png') no-repeat center center/cover;
+    color: white;
+    box-shadow: 0px 0px 20px 0px black;
+}
+
+.hero_container img{
+    
+    height: auto;
+    width: 70%;
+    position: relative;
+    bottom: 50px;
+}
+
+.hero_container{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.hero_container h1{
+        padding-bottom: 20px;
+        font-weight: 500;
+        font-size: 40px;
+        text-align: center;
+}
+
+.hero_container h3{
+    font-weight: 200;
+    text-align: center;
+    position: relative;
+    font-size: 20px;
+    top: -10px;
+}
+
+.hero_container_foot{
+    position: relative;
+    top: 5px; 
+    font-size: 16px;
+    text-align: center;
+    width: 50%;
+}
+
+.hero_container_foot p{
+    font-weight: 200;
+    position: relative;
+    top: 5px;
+    font-size: 15px;
+}
+ /* About section */
+
+#about{
+    height: auto;  
+
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+#about img{
+    height: auto;
+    width: 100%;
+    box-shadow: 0px 0px 10px 0px black;
+}
+
+#myCarousel{
+    margin: 50px;
+}
+
+
+.abt_container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.abt_container h1{
+        text-align: center;
+        position: relative;
+        padding: 20px;
+        font-size: 40px;
+        top: 40px;
+        bottom: 40px;
+        color: #DAAC7E;
+}
+
+.abt_container p{
+    text-align: left;
+    padding: 20px;
+    margin: 20px;
+    font-size: 18px;
+    font-weight: 300;
+}
+
+.abt_content{
+    position: relative;
+    top: 50px;
+    height: auto;
+    width: 80%;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+.abt_content h2{
+    font-size: 40px;
+    color: #DAAC7E;
+    position: relative;
+    left: 40px;
+    top: 20px;
+}
+
+.smart-content h3{
+    font-size: 20px;
+    color: #DAAC7E;
+    position: relative;
+    left: 40px;
+    top: 10px;
+}
+
+.smart-content p{
+    font-size: 20px;
+}
+
+
+
+/* About section ends here */
+
+
+#aboutus_section2{
+    height: 150vh;
+    text-align: left;
+    padding: 50px;
+    background: url('/img/Desktop\ -\ 4.png') no-repeat center center/cover;
+
+}
+
+.aboutus_section2_container{
+    padding: 50px;
+}
+
+
+.aboutus_section2_container h1{
+    color: #DAAC7E;
+}
+
+
+
+/* Contact us section */
+
+
+
+#contact{
+    height: auto;
+    color: white;
+    background: #0F0F27;
+    box-shadow: 0px 0px 20px 0px black;
+    display: flex;
+
+
+    flex-direction: row;
+}
+
+#contact h1{
+    font-size: 40px;
+    font-weight: 200;
+    text-align: left;
+}
+
+.contact_container{
+    padding: 50px;
+
+    width: 50%;
+    margin: 50px;
+}
+
+.contact_container h1{
+    color: #DAAC7E;
+    font-size: 40px;
+}
+
+.contact_container h2{
+    color: #DAAC7E;
+    font-size: 20px;
+}
+
+.contact_container p{
+    font-weight: 200;
+}
+
+/* Maps */
+
+
+.ml-map{
+    width: 50%;
+ 
+    padding: 50px;
+    margin: 50px;
+}
+
+#map {
+    height: 400px;
+    /* The height is 400 pixels */
+    width: 100%;
+    /* The width is the width of the web page */
+  }
+
+
+  /* Footer */
+
+  footer{
+    background: #0F0F27;
+    text-align: center;
+  }
+
+  footer p{
+    margin-bottom: 0;
+    color: white;
+    font-weight: 200;
+    padding: 20px;
+  }

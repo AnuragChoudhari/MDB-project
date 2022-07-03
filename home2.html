@@ -1,0 +1,450 @@
+<!-- 
+<?php   
+
+$host = "localhost";
+$user = "root";
+$pass = "1234";
+$db = "mdb";
+
+$con = mysqli_connect($host, $user, $pass, $db);
+
+// if($con){
+//   echo "Connection success!";
+// }
+// else{
+//   echo "Connection Failed!";
+// }
+
+if(isset($_POST['subs'])){
+$uname = $_POST['uname'];
+$email = $_POST['email'];
+$contact = $_POST['cnum'];
+$address = $_POST['address'];
+
+$sql = "INSERT INTO ml_enquiry_details (uname, email, contact, address)  VALUES ( '$uname', '$email', '$contact', '$address')";
+
+$res = mysqli_query($con, $sql);
+
+// if($res){
+//   echo "Data inserted succesfully!";
+// }
+// else{
+//   echo "Data not inserted";
+// }
+}
+?> -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <!-- Inter font cdn -->
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Bootstrap cdn -->
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+    <!-- jquery cdn -->
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <!-- fontawesome cdn -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- Google Maps -->
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+    <script
+      async
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDJQqlPEsCDFUS6wWCzOuFDpwSCmP2AmK8&callback=initMap"
+    ></script>
+
+    <!-- Animation libraries -->
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+
+    <script>
+        function initMap() {
+          // The location of Uluru
+          const landmarks = { lat: 17.68519815188824, lng: 74.00834425847512};
+          // The map, centered at Uluru
+          const map = new google.maps.Map(document.getElementById("map"), {
+            zoom: 4,
+            center: landmarks,
+          });
+          // The marker, positioned at Uluru
+          const marker = new google.maps.Marker({
+            position: landmarks,
+            map: map,
+          });
+        }
+  
+        window.initMap = initMap;
+
+      </script>
+
+      
+
+    <link rel="stylesheet" type="text/css" href="css/home.css?version=1" />
+
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- Nav bar -->
+
+    <header>
+      <nav id="navbar">
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="home2.html#about">About</a></li>
+          <li><a href="projectdetails.html">Project Details</a></li>
+          <li><a href="#">Book Appointment</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- Hero section -->
+
+    <section id="home">
+      <div class="hero_container">
+        <!-- <h1>Model Landmarks</h1> -->
+
+        <img
+          src="http://localhost/MDB/img/Model Landmark logo_02 1.png"
+          alt=""
+        />
+
+        <h3>Timeless Luxury Priceless Uniqueness!</h3>
+      </div>
+
+      <div class="hero_container_foot">
+        <p>
+          ADDRESS - OPPO MAULI BLOOD BANK, CTS NO 529/B/4 , SADAR BAZAR,
+          PARASNIS COLONY, NEAR POWAI NAKA, BEHIND PENDHARKAR HOSPITAL, SCIENCE
+          COLLEGE ROAD, NEXT TO SUNNY PHARMA, SATARA, MAHARASHTRA 415001
+        </p>
+      </div>
+    </section>
+
+    <hr />
+
+    <!-- About us section -->
+
+    <section id="about" data-aos="right">
+      <div class="abt_container" data-aos="fade-right" data-aos-duration="3000">
+        <h1>About Project</h1>
+        <div class="abt_content" data-aos="fade-right"  data-aos-duration="3000" >
+          <p>
+            Luxury is not limited to lavishness. It is a lifestyle Stylist
+            L'Wren Scott rightly said: Luxury is a state of mind! So true, isn't
+            it? Luxury is not just a display of expense items; it is the
+            originality and exclusivity that matters!
+            <br />
+            <br />
+
+            Our uniqueness make us special and a class apart from others. We
+            strive to provide only the best to our clients. We never compromise
+            on quality and originality, which helps us redefine luxury!
+
+            <br />
+            <br />
+
+            Luxiury and Uniqueness are not just words for us. They are our
+            ideals, and we to inculcate them in every possible aspect. You don't
+            just see luxury and uniqueness but also feel it when you enter the
+            realm of Model Landmarks!
+
+            <br />
+            <br />
+
+            Become a part of the Model Landmark family and explore a new
+            perspective on Luxury and Uniqueness!
+          </p>
+
+          <!-- Our smart approach section -->
+          <h2 data-aos="fade-right"  data-aos-duration="1000" >Our S.M.A.R.T Approach</h2>
+
+          <p data-aos="fade-right"  data-aos-duration="2000" >
+            We have adopted the S.M.A.R.T (Safety, Modernity, Authenticity,
+            Reliability, Trutability.) approach. This approach makes us a class
+            apart from others. We are committed to offer S.M.A.R.T luxury to our
+            customers!
+            <br />
+            <br />
+          </p>
+
+          <div class="smart-content" >
+            <h3 data-aos="fade-right"  data-aos-duration="1000">
+              <i class="fa-solid fa-shield" style="padding-right: 10px"></i
+              >Safety:
+            </h3>
+
+            <p data-aos="fade-right"  data-aos-duration="1000">
+              Safety comes first. We always use quality and certified materials
+              in our construction to ensure that every home owner in safe to the
+              maximum extent
+            </p>
+
+            <h3 data-aos="fade-right"  data-aos-duration="1000">
+              <i class="fa-solid fa-city" style="padding-right: 10px"></i>
+              Modernity:
+            </h3>
+
+            <p data-aos="fade-right"  data-aos-duration="1000">
+              Every nook and corner of a Model Landmark space is decorated with
+              modernity! We design the space according to modernity in every
+              aspect when you enter a Model Landmark Property.
+            </p>
+
+            <h3 data-aos="fade-right"  data-aos-duration="1000">
+              <i class="fa-brands fa-atlassian" style="padding-right: 10px"></i
+              >Authenticity:
+            </h3>
+
+            <p data-aos="fade-right"  data-aos-duration="1000">
+              We believe in authenticity and clarity in every process. From the
+              booking process to the final handover of the property, we carry
+              out a transparent process.
+            </p>
+
+            <h3 data-aos="fade-right"  data-aos-duration="1000">
+              <i
+                class="fa-solid fa-clipboard-check"
+                style="padding-right: 10px"
+              ></i
+              >Reliability:
+            </h3>
+
+            <p data-aos="fade-right"  data-aos-duration="1000">
+              We are extremely reliable! The rich experience of 35 years and
+              superior quality construction makes us one of the most reliable
+              construction companies in Maharashtra!
+            </p>
+
+            <h3 data-aos="fade-right"  data-aos-duration="1000" >
+              <i class="fa-solid fa-handshake" style="padding-right: 10px"></i
+              >Trustability:
+            </h3>
+
+            <p data-aos="fade-right"  data-aos-duration="1000">
+              The Trust quotient is one of the most important factors. Trust is
+              earned when actions meet words. We never make fraudulent promises
+              and always believe in complete clarity. We guarantee complete
+              honesty during the process and stay true to our commitments
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Carousel -->
+
+      <div id="myCarousel" class="carousel slide" data-ride="carousel">
+        <!-- Indicators -->
+        <ol class="carousel-indicators">
+          <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+          <li data-target="#myCarousel" data-slide-to="1"></li>
+          <li data-target="#myCarousel" data-slide-to="2"></li>
+        </ol>
+
+        <!-- Wrapper for slides -->
+        <div class="carousel-inner">
+          <div class="item active">
+          
+            <img src=" http://localhost/MDB/img/Elevations/Day View.jpg" alt="Los Angeles" />
+          </div>
+
+          <div class="item">
+            <img src=" http://localhost/MDB/img/Elevations/Night View.jpg" alt="Chicago" />
+          </div>
+
+          <div class="item">
+            <img src=" http://localhost/MDB/img/Elevations/Podium View.jpg" alt="New York" />
+          </div>
+        </div>
+
+        <!-- Left and right controls -->
+        <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+          <span class="glyphicon glyphicon-chevron-left"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="right carousel-control" href="#myCarousel" data-slide="next">
+          <span class="glyphicon glyphicon-chevron-right"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
+
+      <!-- Carousel ends -->
+    </section>
+
+    <!-- About us section ends here -->
+
+    <hr />
+
+    <!-- Active sites  -->
+
+    <section id="aboutus_section2">
+      <div class="aboutus_section2_container">
+        <h1>
+          A Journey From <br />
+          Traditional To Modern
+        </h1>
+        <br />
+        <p>
+          Mr. Agate and Mr.Gijare formed the Shree Construction in 1986. The
+          formation of Shree Construction marked the beginning of a new era in
+          the building and construction industry! Starting from humble
+          beginnings, we made a resolve to change the tradional concept of homes
+          among the people of Satara. Earlier, wadas and bungalows were rooted
+          as a perfect home for the people of Satara.We introduced the
+          appartment housing concept to the people of Satara by constructing
+          residential project. hence this aspect eventually led to the
+          transformation of the concept ofhome among the people. With the advent
+          of the new generation of home owners, we are set to provide the
+          amenities and luxuries they expect . Change is the law and we are
+          quick to adapt to the changes taking place across the construction
+          segment in locals.
+        </p>
+        <br />
+
+        <p>
+          Shree Construction was founded on 15th August, an anniversary day when
+          India gained independence from the clutches of foreign powera. On the
+          day in 1986, the formation of Shree Construction marked freedom
+          enabling customers to get best construction and commitments. we have
+          always stayed true to our word and never compromised on the quality
+          and commitment. We have numerous projects in the residential and
+          commercial segments.
+        </p>
+
+        <br />
+
+        <p>
+          Model Developers was a startinf phase of upgrading to modern life
+          styles in 1998.
+        </p>
+
+        <br />
+        <br />
+
+        <h1>Our Achievements So Far!</h1>
+        <br />
+        <p>
+          Since our advent, we have delivered over 400+ Bungalows to our
+          customers. Furthermore, we have more than 100 industrial sheds at
+          Satara, Kolhapur, Shirwal, and Pune. We have constructed 50+
+          commercial buildings and nearly 120+ residential projects having 2600+
+          appartments in Satara & Pune. Our rich experience has made us one of
+          the leading builders inthe Western Maharashtra belt. Excellence in
+          engineering and staying true to our commitments has acted as ladders
+          on the path to success. In uocoming years we will thrive to achieve
+          amazing mile stones in construction industry.
+        </p>
+
+        <br />
+        <br />
+      </div>
+    </section>
+
+    <!-- Contact Us -->
+
+    <section id="contact">
+      <br />
+      <br />
+
+      <div class="contact_container">
+        <h1>CONNECT AT</h1>
+
+        <br />
+
+        <h2>Model Landmarks</h2>
+
+        <p>
+          Venture by Model Group 254, Bhavani Peth, Above DNS Bank, Moti Chowk,
+          Rajpath, Nalini smruti, Satara: 415002
+        </p>
+
+        <h2>For Enquiry :</h2>
+
+        <p>
+          Pradyumna: +91 98227 55935 <br />
+          Deven: +91 98500 33192 E-mail: <br />
+          sales@modeldevelopers.com
+        </p>
+
+        <h2>Project By:</h2>
+
+        <p>Model Landmarks</p>
+
+        <h2>Member of:</h2>
+
+        <p>Credai Satara</p>
+
+        <br />
+
+        <hr />
+
+        <!-- Credits section -->
+
+        <br />
+
+        <h2>Architect:</h2>
+
+        <p>
+          Ar Upendra Pandit, Design Enclave Architects, Ar. Shree Mahajani,
+          Architect-Interior-Design, Satara
+        </p>
+
+        <h2>PMC:</h2>
+        <p>Smart Processes, Pune</p>
+
+        <h2>Legal Advisor:</h2>
+
+        <p>Adv. Rajendra Bahulekar, Satara</p>
+
+        <h2>Structural Consultant:</h2>
+        <p>Kulkarni - Bhilare Consultants, Satara</p>
+
+      </div>
+
+      <div class="ml-map">
+        <div id="map"></div>
+      </div>
+
+     
+
+    </section>
+
+    <!-- Copyright notice -->
+    <footer>
+        <p>
+            © 2022 | Model Developers And Builders, Satara | All Rights Reserved with Copyright & TradeMarks
+        </p>
+  </footer>
+
+  <script>
+    AOS.init();
+  </script>
+
+  </body>
+</html>

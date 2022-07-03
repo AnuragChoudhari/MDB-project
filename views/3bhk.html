@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <!-- Font Awesome -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      rel="stylesheet"
+    />
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- MDB -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/4.2.0/mdb.min.css"
+      rel="stylesheet"
+    />
+    <!-- MDB -->
+    <script
+      type="text/javascript"
+      src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/4.2.0/mdb.min.js"
+    ></script>
+
+    <!-- 3 BHK css file-->
+
+    <link rel="stylesheet" href="../css/3bhk.css">
+
+      <!-- jquery cdn -->
+
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+  </head>
+  <body>
+
+   
+    
+      <nav id="navbar">
+        <ul>
+          <li><a href="../home2.html">Home</a></li>
+          <li><a href="../home2.html">About</a></li>
+          <li><a href="../projectdetails.html">Project Details</a></li>
+          <li><a href="#">Book Appointment</a></li>
+        </ul>
+      </nav>
+
+
+ 
+
+
+    <section id="project_det">
+      <div class="project_det_container">
+        <div class="project_cards">
+          <!-- Cards -->
+
+          <div class="card" style="width: 400px">
+            <div class="bg-image hover-zoom">
+            <img
+              class="card-img-top"
+              src="../img/3 BHK/3D 3BHK type1 flat104.jpg"
+              alt="Card image"
+              height="auto"
+              width="80%"
+            />
+            </div>
+            <div class="card-body">
+              <h4 class="card-title">3D 3BHK type1 flat</h4>
+              <p class="card-text">3D model view</p>
+              <!-- <a href="" class="btn btn-primary" id="btn">Click on the image to view in full screen</a> -->
+              <p class="card-footer"> Click on the image to view in full screen mode</p>
+            </div>
+          </div>
+
+          <div class="card" style="width: 400px">
+            <div class="bg-image hover-zoom">
+              <img
+                class="card-img-top"
+                src="../img/3 BHK/3D 3BHK type2 flat205.jpg"
+                alt="Card image"
+                class="w-100"
+                height="auto"
+                width="80%"
+              />
+            </div>
+            <div class="card-body">
+              <h4 class="card-title">3D 3BHK type2 flat</h4>
+              <p class="card-text">3D model views</p>
+              <!-- <a href="/views/3bhk.html" class="btn btn-primary" >Click on the image to view in full screen</a> -->
+              <p class="card-footer"> Click on the image to view in full screen mode</p>
+            </div>
+          </div>
+
+
+
+        </div>
+      </div>
+    </section>
+
+
+  </body>
+  <script>
+    $(document).ready(function () {
+      $(".card-img-top").click(function () {
+        this.requestFullscreen();
+      });
+    });
+  </script>
+</html>

@@ -1,0 +1,103 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Inter;
+}
+
+
+body{
+    background-color: #0F0F27;
+    height: 100vh;
+   
+}
+
+
+#carouselMultiItemExample{
+
+   justify-content: center;
+   align-items: center;
+   flex-direction: row;
+   height: 100vh;
+}
+
+
+nav{
+    width: 100%;
+   
+    background: rgb(0, 0, 0);
+    box-shadow: 0px 0px 20px 0px black;
+    z-index: 20;
+    text-align: center;
+    padding-left: 20px;
+ }
+ 
+ nav ul {
+    list-style-type: none;
+    margin-bottom: 0;
+ }
+ 
+ nav ul li{
+    display: inline-flex;
+ }
+ 
+ nav ul li a{
+    font-size: 20px;
+    text-decoration: none;
+   color: grey;
+    padding: 20px;
+    font-weight: 300;
+    font-size: 18px;
+    transition: .6s ease-in-out;
+ }
+ 
+ nav ul li a:hover{  
+        text-decoration: none;
+        color: white;
+ }
+
+
+
+
+/*  */
+
+
+
+ /* Det */
+
+ #project_det{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+ }
+
+ .project_det_container{
+    padding: 20px;
+    
+ }
+
+ .project_cards{
+   padding: 20px;
+   height: auto;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   width: 100%;
+ }
+
+ .card-img-top{
+    transition: 1s ease-in-out;
+    filter: saturate(0);
+ }
+
+ .card{
+    color: black;
+ 
+ }
+
+ .card-img-top:hover{
+    filter: brightness(1.2);
+    cursor: pointer;
+ }
