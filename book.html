@@ -5,10 +5,70 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+
+        <!--Inter font  -->
+        <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500&display=swap"
+        rel="stylesheet"
+      />
+  
+      <!-- Bootstrap cdn -->
+  
+      <link
+        rel="stylesheet"
+        href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+      />
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  
+      <!-- jquery cdn -->
+  
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  
+      <!-- fontawesome cdn -->
+      <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous"
+        referrerpolicy="no-referrer"
+      />
+  
+      <!-- Animation libraries -->
+  
+      <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+      <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  
+      <!-- MDB -->
+      <link
+        href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/4.2.0/mdb.min.css"
+        rel="stylesheet"
+      />
+      <!-- MDB -->
+      <script
+        type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/4.2.0/mdb.min.js"
+      ></script>
+
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            
+        }
+        .form-label{
+            font-size: 20px;
+        }
+
+        form{
+            padding: 50px;
+        }
+    </style>
 </head>
 <body>
-
-    <form name="contact" method="POST" data-netlify="true">
+<!-- 
+    <form name="contact" netlify method="POST" data-netlify="true">
         <p>
           <label>Your Name: <input type="text" name="name" /></label>
         </p>
@@ -28,6 +88,68 @@
           <button type="submit">Send</button>
         </p>
       </form>
-    
+     -->
+
+     <div class="p-5 text-center bg-light">
+        <h1 class="mb-3">Book an Appointment</h1>
+        <h4 class="mb-3">Intrested in booking your dream house at Model Landmarks.<br>
+            Book an appointment with us and our team will contact you and fix the appointment.
+        </h4>
+        <h3>Fill the below form</h3>
+      </div>
+
+     <form name="appointment" netlify method="POST" data-netlify="true"> 
+        <!-- 2 column grid layout with text inputs for the first and last names -->
+        <div class="row mb-4">
+          <div class="col">
+            <div class="form-outline">
+              <input type="text" id="form6Example1" class="form-control" />
+              <label class="form-label" for="form6Example1">First name</label>
+            </div>
+          </div>
+          <div class="col">
+            <div class="form-outline">
+              <input type="text" id="form6Example2" class="form-control" />
+              <label class="form-label" for="form6Example2">Last name</label>
+            </div>
+          </div>
+        </div>
+      
+        <!-- Text input -->
+        <div class="form-outline mb-4">
+          <input type="text" id="form6Example3" class="form-control" />
+          <label class="form-label" for="form6Example3">Company name</label>
+        </div>
+      
+        <!-- Text input -->
+        <div class="form-outline mb-4">
+          <input type="text" id="form6Example4" class="form-control" />
+          <label class="form-label" for="form6Example4">Address</label>
+        </div>
+      
+        <!-- Email input -->
+        <div class="form-outline mb-4">
+          <input type="email" id="form6Example5" class="form-control" />
+          <label class="form-label" for="form6Example5">Email</label>
+        </div>
+      
+        <!-- Number input -->
+        <div class="form-outline mb-4">
+          <input type="number" id="form6Example6" class="form-control" />
+          <label class="form-label" for="form6Example6">Phone</label>
+        </div>
+      
+        <!-- Message input -->
+        <div class="form-outline mb-4">
+          <textarea class="form-control" id="form6Example7" rows="4"></textarea>
+          <label class="form-label" for="form6Example7">Additional information</label>
+        </div>
+      
+  
+      
+        <!-- Submit button -->
+        <button type="submit" class="btn btn-primary btn-block mb-4" style="font-size: 20px;">Submit</button>
+      </form>
+
 </body>
 </html>
