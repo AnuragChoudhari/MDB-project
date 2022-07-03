@@ -56,6 +56,7 @@
             margin: 0;
             padding: 0;
             font-size: 20px;
+            font-family: Inter;
         }
         .form-label{
             font-size: 20px;
@@ -63,12 +64,32 @@
 
         form{
             padding: 50px;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            flex-direction: column;
         }
 
+        label{
+            font-weight: 300;
+            color: #1266f1;
+        }
         input{
             width: 100%;
+            padding: 10px;
+            outline: none;
+            border: 0px;
+            border-bottom: 1px solid black;
         }
-     
+        textarea{
+            padding: 10px;
+        }
+        
+        #btn1{
+            font-size: 20px;
+            text-align: center;
+        }
+
     </style>
 </head>
 <body>
@@ -86,20 +107,20 @@
       
     <form name="contact" netlify method="POST" data-netlify="true">
         <p>
-          <label>Your Name: <input type="text" name="name" /></label>
+          <label>Your Name: <input type="text" name="name" placeholder="Enter your full name"/></label>
         </p>
         <p>
-          <label>Your Email: <input type="email" name="email" /></label>
+          <label>Your Email: <input type="email" name="email" placeholder="Enter your Email " /></label>
         </p>
         <p>
-            <label>Your Contact No: <input type="email" name="email" /></label>
+            <label>Your Contact No: <input type="text" name="contact" placeholder="Enter your Contact No." /></label>
           </p>
         
         <p>
-          <label>Message: <textarea name="message" ></textarea></label>
+          <label>Message: <br><textarea name="message" placeholder="Enter any message if you want to" rows="5" cols="50"></textarea></label>
         </p>
         <p>
-          <button type="submit">Send</button>
+          <button type="submit" id="btn1" class="btn btn-primary">Send</button>
         </p>
       </form>
     
