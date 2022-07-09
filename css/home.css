@@ -51,7 +51,7 @@ nav ul li a:hover{
     justify-content: center;
     align-items: center;
     color: black;
-    background: url('http://localhost/MDB/img/Desk2.png') no-repeat center center/cover;
+    background: url('/img/Desk2.png') no-repeat center center/cover;
     color: white;
     box-shadow: 0px 0px 20px 0px black;
 }
