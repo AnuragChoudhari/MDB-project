@@ -97,7 +97,7 @@ nav ul li a:hover{
  /* Det */
 
  #project_det{
-    height: 100vh;
+    height: auto;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -132,4 +132,9 @@ nav ul li a:hover{
  .card-img-top:hover{
     filter: brightness(1.2);
     cursor: pointer;
+ }
+
+
+ #more_info{
+   height: auto;
  }
